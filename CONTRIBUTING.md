@@ -73,7 +73,7 @@ Always implement the **real AWS wire protocol** — never invent custom endpoint
 
 - Keep PRs focused — one feature or fix per PR
 - Add or update tests for any changed behavior
-- Ensure `mvn test` passes before opening the PR
+- CI workflow runs automatically on every PR (build and tests must pass)
 - Reference any related issues in the PR description
 
 ## Reporting Security Issues

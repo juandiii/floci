@@ -41,8 +41,6 @@ This project uses [Conventional Commits](https://www.conventionalcommits.org/) â
 
 ## Adding a New AWS Service
 
-See [CLAUDE.md](https://github.com/hectorvent/floci/blob/main/CLAUDE.md) for the full architecture guide. Quick summary:
-
 1. Create `src/main/java/.../services/<service>/` with a Controller, Service, and `model/` package
 2. Pick the right protocol (see the protocol table in CLAUDE.md)
 3. Register the service in `ServiceRegistry`
@@ -51,7 +49,7 @@ See [CLAUDE.md](https://github.com/hectorvent/floci/blob/main/CLAUDE.md) for the
 
 ## Pull Request Checklist
 
-- [ ] `mvn test` passes
+- [ ] CI workflow passes (build and tests run automatically on every PR)
 - [ ] New or updated integration test added
 - [ ] Commit messages follow Conventional Commits
 
